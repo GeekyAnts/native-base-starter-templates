@@ -1,9 +1,14 @@
 import React from "react";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider, extendTheme, theme as nbTheme } from "native-base";
 
 function App({ Component, pageProps }) {
+  const theme = extendTheme({
+    colors: {
+      primary: nbTheme.colors.violet,
+    },
+  });
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={theme}>
       <Component {...pageProps} />
     </NativeBaseProvider>
   );

@@ -16,7 +16,7 @@ import MaterialIconsFont from "react-native-vector-icons/Fonts/MaterialIcons.ttf
 import OcticonsFont from "react-native-vector-icons/Fonts/Octicons.ttf";
 import SimpleLineIconsFont from "react-native-vector-icons/Fonts/SimpleLineIcons.ttf";
 import ZocialFont from "react-native-vector-icons/Fonts/Zocial.ttf";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider, extendTheme, theme as nbTheme } from "native-base";
 
 const iconFontistoStyles = `@font-face {
   src: url(${FontistoFont});
@@ -108,9 +108,15 @@ if (style.styleSheet) {
 // Inject stylesheet
 document.head.appendChild(style);
 
+const theme = extendTheme({
+  colors: {
+    primary: nbTheme.colors.violet,
+  },
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={theme}>
       <App />
     </NativeBaseProvider>
   </React.StrictMode>,
