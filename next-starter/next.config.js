@@ -10,7 +10,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        // this will match `/english(default)/something` being requested
         source: "/",
         destination: "/sign-up",
         permanent: false,
