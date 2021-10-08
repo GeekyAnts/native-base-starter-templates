@@ -6,23 +6,11 @@ const withTM = require("next-transpile-modules")([
   "native-base",
 ]);
 
-const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/sign-up",
-        permanent: false,
-      },
-    ];
-  },
-};
-
 module.exports = withPlugins(
   [
     withTM,
     [withFonts, { projectRoot: __dirname }],
     [withExpo, { projectRoot: __dirname }],
   ],
-  nextConfig
+  {}
 );
