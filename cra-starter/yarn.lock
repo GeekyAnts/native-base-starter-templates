@@ -2729,6 +2729,18 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash.has@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.has/-/lodash.has-4.5.6.tgz#d94d3f0b45ced2ae76d632080daf70e9b76e29eb"
+  integrity sha512-SpUCvze0uHilQX/mt4K/cak5OQny1pVfz3pJx6H70dE3Tvw9s7EtlMK+vY6UBS+PQgETDfv6vhwoa3FPS2wrhg==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.175"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.175.tgz#b78dfa959192b01fae0ad90e166478769b215f45"
+  integrity sha512-XmdEOrKQ8a1Y/yxQFOMbC47G/V2VDO1GvMRnl4O75M4GW/abC5tnfzadQYkqEveqRM1dEJGFFegfPNA2vvx2iw==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -8140,6 +8152,11 @@ lodash.get@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
+lodash.has@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
+  integrity sha1-0Z9NwQlQWMzL4rDN9O4P5Ko3yGI=
+
 lodash.isempty@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.isempty/-/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
@@ -8615,10 +8632,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@3.1.0-rc.1:
-  version "3.1.0-rc.1"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.1.0-rc.1.tgz#02fca0014a476e6e5adf48a44213174054c3e544"
-  integrity sha512-b2PophqEvuHnCrePEGiIuSTip06RuHTCgW8wCkeU8H2jzC0ZRtSk1Qqfy6xYuuJil89955aSkKITmBSaJiTnPQ==
+native-base@3.2.1-rc.2:
+  version "3.2.1-rc.2"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.2.1-rc.2.tgz#eb24fc4718adb0af41d0a7a683f2c6728c7ec6c5"
+  integrity sha512-B9jBpZ/rXQgnb5oaxecK73mikUvD/yhUftVG+hdYHdOcqpY5xMgSnBEcs0/bE3MsLrs0P7Me7uZIaZTBjEN6jw==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
@@ -8636,9 +8653,11 @@ native-base@3.1.0-rc.1:
     "@react-native-aria/utils" "^0.2.7"
     "@react-stately/combobox" "^3.0.0-alpha.1"
     "@react-stately/radio" "^3.2.1"
+    "@types/lodash.has" "^4.5.6"
     "@types/styled-system" "^5.1.9"
     lodash.clonedeep "^4.5.0"
     lodash.get "^4.4.2"
+    lodash.has "^4.5.2"
     lodash.isempty "^4.4.0"
     lodash.isequal "^4.5.0"
     lodash.isnil "^4.0.0"
